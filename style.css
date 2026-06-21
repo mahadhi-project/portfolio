@@ -199,3 +199,120 @@ font-size:2.5rem;
 }
 
 }
+/* Premium Animations */
+
+.hidden{
+opacity:0;
+transform:translateY(50px);
+transition:all 1s ease;
+}
+
+.show{
+opacity:1;
+transform:translateY(0);
+}
+
+/* Floating Profile Photo */
+
+.hero img{
+animation:float 4s ease-in-out infinite;
+}
+
+@keyframes float{
+
+0%{
+transform:translateY(0);
+}
+
+50%{
+transform:translateY(-12px);
+}
+
+100%{
+transform:translateY(0);
+}
+
+}
+
+/* Premium Card Hover */
+
+.card{
+transition:all .3s ease;
+}
+
+.card:hover{
+transform:translateY(-10px);
+box-shadow:0 15px 35px rgba(212,175,55,.25);
+}
+
+/* Project Box Hover */
+
+.project-box{
+transition:.3s;
+}
+
+.project-box:hover{
+transform:translateY(-8px);
+box-shadow:0 15px 35px rgba(212,175,55,.2);
+}
+
+/* Certificate Hover */
+
+.cert img{
+transition:.4s;
+cursor:pointer;
+}
+
+.cert img:hover{
+transform:scale(1.05);
+}
+
+/* Skill Hover */
+
+.skill{
+transition:.3s;
+}
+
+.skill:hover{
+transform:translateY(-5px);
+}
+
+/* Navbar Hover */
+
+nav{
+transition:.3s;
+}
+
+/* Section Titles */
+
+.section-title{
+position:relative;
+display:inline-block;
+}
+
+.section-title::after{
+
+content:'';
+
+position:absolute;
+
+left:0;
+
+bottom:-8px;
+
+width:60%;
+
+height:3px;
+
+background:var(--gold);
+
+border-radius:10px;
+
+}
+
+/* Smooth Button Effects */
+
+.btn:hover{
+transform:translateY(-5px);
+box-shadow:0 10px 25px rgba(212,175,55,.4);
+}
