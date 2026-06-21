@@ -1,0 +1,201 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Segoe UI',sans-serif;
+scroll-behavior:smooth;
+}
+
+:root{
+--bg:#081420;
+--card:#112233;
+--gold:#d4af37;
+--text:#ffffff;
+}
+
+body{
+background:var(--bg);
+color:var(--text);
+line-height:1.7;
+}
+
+nav{
+position:fixed;
+top:0;
+width:100%;
+padding:20px 8%;
+background:rgba(8,20,32,.95);
+backdrop-filter:blur(10px);
+display:flex;
+justify-content:space-between;
+z-index:1000;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin-left:20px;
+transition:.3s;
+}
+
+nav a:hover{
+color:var(--gold);
+}
+
+.hero{
+min-height:100vh;
+display:flex;
+align-items:center;
+justify-content:center;
+gap:60px;
+padding:120px 8%;
+}
+
+.hero img{
+width:350px;
+border-radius:25px;
+box-shadow:0 0 40px rgba(212,175,55,.3);
+}
+
+.hero h1{
+font-size:4rem;
+color:var(--gold);
+}
+
+.hero p{
+font-size:1.1rem;
+margin-top:15px;
+}
+
+.btn{
+display:inline-block;
+padding:14px 28px;
+background:var(--gold);
+color:#081420;
+font-weight:700;
+text-decoration:none;
+border-radius:30px;
+margin-top:20px;
+transition:.3s;
+}
+
+.btn:hover{
+transform:translateY(-3px);
+}
+
+section{
+padding:90px 8%;
+}
+
+.section-title{
+font-size:2.5rem;
+color:var(--gold);
+margin-bottom:30px;
+}
+
+.card{
+background:var(--card);
+padding:25px;
+border-radius:20px;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:20px;
+}
+
+.fact{
+text-align:center;
+padding:30px;
+}
+
+.fact h3{
+color:var(--gold);
+margin-bottom:10px;
+}
+
+.timeline{
+border-left:3px solid var(--gold);
+padding-left:30px;
+}
+
+.timeline-item{
+margin-bottom:30px;
+}
+
+.timeline-item h3{
+color:var(--gold);
+}
+
+.skills{
+display:flex;
+flex-wrap:wrap;
+gap:15px;
+}
+
+.skill{
+background:var(--gold);
+color:#081420;
+padding:10px 20px;
+border-radius:25px;
+font-weight:bold;
+}
+
+.cert img{
+width:100%;
+border-radius:15px;
+}
+
+.project-box{
+background:var(--card);
+padding:30px;
+border-radius:20px;
+}
+
+.demo-card{
+margin-top:20px;
+background:#1c2f45;
+padding:20px;
+border-radius:15px;
+}
+
+.contact-btn{
+display:inline-block;
+margin-top:15px;
+padding:12px 20px;
+background:var(--gold);
+color:#081420;
+text-decoration:none;
+border-radius:25px;
+font-weight:bold;
+}
+
+footer{
+background:#060d15;
+padding:40px;
+text-align:center;
+}
+
+.quote{
+font-style:italic;
+opacity:.8;
+margin-top:10px;
+}
+
+@media(max-width:900px){
+
+.hero{
+flex-direction:column;
+text-align:center;
+}
+
+.hero img{
+width:280px;
+}
+
+.hero h1{
+font-size:2.5rem;
+}
+
+}
